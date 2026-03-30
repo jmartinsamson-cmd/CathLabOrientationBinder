@@ -2,3 +2,14 @@
 
 #Ignore vscode AI rules
 .github\instructions\codacy.instructions.md
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
