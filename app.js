@@ -5,74 +5,6 @@ const STORAGE_KEY = "cathLabOrientationBinderState_v1";
 
 const sections = [
   {
-    id: "shared-1",
-    role: "shared",
-    title: "OAE Addendum Framework & Validation",
-    items: [
-      "Review Method of Instruction keys: P, E, S, C",
-      "Review Method of Evaluation keys: O, RD, NA, T, V",
-      "Complete Self Assessment (Never Done / Needs Review-Practice / Skilled)",
-      "Confirm Procedural OAE accompanies addendum and is stored in employee file",
-      "If not evaluated during orientation, add skill/task to POST ORIENTATION GOAL (POG) FORM"
-    ]
-  },
-  {
-    id: "shared-2",
-    role: "shared",
-    title: "Specialty Core Skills: Access, Monitoring & Hemodynamics",
-    items: [
-      "Access site management",
-      "Arterial sheath removal (Elsevier: Arterial and Venous Sheath Removal)",
-      "Venous sheath removal (Elsevier: Arterial and Venous Sheath Removal)",
-      "Cardiac Monitor Setup and Lead Placement (Elsevier)",
-      "Cardiac rhythm interpretation and escalation",
-      "Hemodynamics interpretation and escalation",
-      "Transducer setup, zeroing, and maintenance",
-      "Radial artery compression device management and removal",
-      "Intra-Aortic Balloon Pump insertion assistance, management, and removal assistance"
-    ]
-  },
-  {
-    id: "shared-3",
-    role: "shared",
-    title: "Procedures, Safety, Airway & Emergency Response",
-    items: [
-      "Chest tube management",
-      "Sterile technique: establish and maintain sterile field",
-      "Role in malignant hyperthermia identification and treatment",
-      "Role in peri-arrest or arrest situations",
-      "Point of Care Testing - ACT",
-      "Understands and maintains radiation safety",
-      "Understands and maintains laser safety",
-      "Understands and maintains fire safety",
-      "Airway positioning to establish and maintain patent airway",
-      "Insert, maintain, remove, and document oral and nasopharyngeal airways",
-      "Pulse oximetry interpretation and troubleshooting",
-      "Role in airway emergencies",
-      "Rapid sequence induction for intubation",
-      "Ventilation: Bag Mask",
-      "End tidal CO2 monitoring"
-    ]
-  },
-  {
-    id: "shared-4",
-    role: "shared",
-    title: "Documentation Needs (not covered in CORE OAE)",
-    items: [
-      "Demonstrates understanding of supplies and management during cath lab procedures",
-      "Demonstrates understanding of supplies and management during EP lab procedures",
-      "Case request and scheduling",
-      "Documents required timed events (in-room, case/sedation start/end, out-of-room)",
-      "Verifies H&P updated within 24 hours",
-      "Verifies consent complete, signed, and matches procedure",
-      "Documents procedure, assessment, prep, and Scott Triggers assessment",
-      "Documents timeout (pre-incision) and debrief at case complete",
-      "Captures ongoing procedural documentation including supplies, implants, counts, and POC testing",
-      "Completes Code Blue documentation and updates final procedure list",
-      "Documents post procedure assessment, wounds/incision/puncture site in LDA, and care plan/education"
-    ]
-  },
-  {
     id: "rn-1",
     role: "rn",
     title: "RN Medication Administration Requirements",
@@ -159,7 +91,6 @@ const sections = [
 ];
 
 const roleLabelMap = {
-  shared: "Shared",
   rn: "RN",
   rt: "RT"
 };
