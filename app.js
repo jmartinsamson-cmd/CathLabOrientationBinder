@@ -56,6 +56,25 @@ const sections = [
     ]
   },
   {
+    id: "rn-pre-procedure",
+    role: "rn",
+    title: "RN Pre-Procedure Readiness & Cath Form Review (IMG_5189)",
+    items: [
+      "Verify header identifiers complete before room entry: Date, Procedure, MD/Staff, Height, Weight",
+      "Confirm complete allergy screening and reactions are documented (e.g., PCN, iodine, contrast, sulfa, codeine)",
+      "Confirm risk/history checklist completion: HTN, DM, CHF, MI, PVD, COPD, CVA/TIA, sleep apnea, smoking status, angina class",
+      "Validate anti-anginal and revascularization history fields: prior PTCA/stent, CABG, CCB, BB, long-acting nitrate, Ranexa",
+      "Review pre-procedure labs required on form: BUN/Cr, INR, Hgb/Hct, troponin and relevant coagulation markers per protocol",
+      "Reconcile anticoagulant/antiplatelet status and timing: Coumadin, Eliquis, Pradaxa, Xarelto, Plavix, Brilinta, Effient, heparin/lovenox",
+      "Verify diabetic medication plan: insulin and metformin hold/continuation per policy and renal function",
+      "Complete contrast accountability section: contrast used, contrast waste, fluoro time, and mGy documentation",
+      "Prepare and account for procedural supplies listed on form: needles, sutures, blades, raytex, bovie, and key instruments",
+      "Confirm lesion/device planning fields are prepped for intra-procedure documentation: lesion, vessel, guide catheter, guidewire, balloon, stent",
+      "Perform time-out readiness check: consent, code status, baseline vitals/rhythm, access plan, and emergency equipment availability",
+      "Document all pre-procedure checklist elements before first puncture to reduce omissions and improve handoff quality"
+    ]
+  },
+  {
     id: "rn-advanced-dobutamine",
     role: "rn",
     title: "RN Advanced Procedures: Dobutamine Stress Echocardiography",
@@ -306,6 +325,38 @@ const roleLabelMap = {
 };
 
 const sectionFigureMap = {
+  "rn-pre-procedure": [
+    {
+      src: "CardPics/IMG_5189.HEIC",
+      title: "Cath pre-procedure worksheet (IMG_5189)",
+      note: "Core intake, risk-factor, lab, medication, and device-planning documentation form"
+    },
+    {
+      src: "CardPics/NEJMra011883_f1.jpg",
+      title: "Coronary and chamber anatomy overview",
+      note: "Rapid anatomy orientation before procedure planning"
+    },
+    {
+      src: "CardPics/jrv250028f1.jpg",
+      title: "Peripheral venous thrombosis anatomy",
+      note: "Complication-awareness visual for vascular access planning"
+    },
+    {
+      src: "CardPics/1-s2.0-S0735109722048768-gr3.jpg",
+      title: "Central venous access landmark illustration",
+      note: "Neck/chest vascular relationships relevant to line placement"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879813008029-gr1.jpg",
+      title: "Peripheral arterial anatomy reference",
+      note: "Lower-extremity arterial orientation for access and complications"
+    },
+    {
+      src: "CardPics/1-s2.0-S193687981830712X-gr1.jpg",
+      title: "General cath preparation anatomy reference",
+      note: "Supplemental pre-procedure positioning and anatomy visual"
+    }
+  ],
   "rn-advanced-ffr": [
     {
       src: "CardPics/1-s2.0-S0735109716334301-gr4.jpg",
@@ -321,6 +372,16 @@ const sectionFigureMap = {
       src: "CardPics/jrv220002f2.jpg",
       title: "Coronary artery anatomy and ACS mechanisms",
       note: "Background anatomy and lesion pathophysiology"
+    },
+    {
+      src: "CardPics/1-s2.0-S0735109708010358-gr2.jpg",
+      title: "Additional FFR waveform reference",
+      note: "Supplemental pressure-ratio tracing example"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879816320866-gr1.jpg",
+      title: "Physiology-guided lesion assessment figure",
+      note: "Additional visual support for wire-based physiology"
     }
   ],
   "rn-advanced-lhc": [
@@ -338,6 +399,21 @@ const sectionFigureMap = {
       src: "CardPics/1-s2.0-S1936879821021749-gr1.jpg",
       title: "Transseptal projection geometry",
       note: "RAO/LAO and cranial/caudal orientation planning"
+    },
+    {
+      src: "CardPics/1-s2.0-S0735109722070267-gr3.jpg",
+      title: "Transseptal puncture fluoroscopic sequence",
+      note: "Stepwise fluoroscopic positioning during puncture workflow"
+    },
+    {
+      src: "CardPics/1-s2.0-S0735109722075581-gr1.jpg",
+      title: "Transseptal crossing fluoroscopic example",
+      note: "Illustrates catheter trajectory and transseptal crossing"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879814009236-gr1.jpg",
+      title: "Left-sided structural viewing angles",
+      note: "Projection orientation for transcatheter left-heart interventions"
     }
   ],
   "rn-advanced-rhc": [
@@ -350,6 +426,11 @@ const sectionFigureMap = {
       src: "CardPics/1-s2.0-S2213177923001968-gr2.jpg",
       title: "Pulmonary artery catheter goals and technical points",
       note: "Selection context, leveling, and hemodynamic targets"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936878X22003989-gr8.jpg",
+      title: "Supplemental right-heart hemodynamic visual",
+      note: "Additional reference for catheter position and interpretation"
     }
   ],
   "rn-advanced-radial": [
@@ -362,6 +443,20 @@ const sectionFigureMap = {
       src: "CardPics/1-s2.0-S1936879818309245-gr1.jpg",
       title: "Palmar and dorsal arterial arch anatomy",
       note: "Distal hand circulation relevant to radial access safety"
+    }
+  ],
+  "rn-advanced-ivus": [
+    {
+      src: "CardPics/1-s2.0-S1936879813018116-gr1.jpg",
+      title: "Supplemental intravascular imaging reference",
+      note: "Additional anatomy/imaging context for IVUS interpretation"
+    }
+  ],
+  "rn-advanced-orbital": [
+    {
+      src: "CardPics/1-s2.0-S1936879821007925-gr4.jpg",
+      title: "Supplemental atherectomy technique visual",
+      note: "Additional procedural imaging context for orbital atherectomy"
     }
   ]
 };
