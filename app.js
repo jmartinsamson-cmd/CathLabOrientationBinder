@@ -328,135 +328,135 @@ const sectionFigureMap = {
   "rn-pre-procedure": [
     {
       src: "CardPics/IMG_5189.HEIC",
-      title: "Cath pre-procedure worksheet (IMG_5189)",
-      note: "Core intake, risk-factor, lab, medication, and device-planning documentation form"
+      title: "Pre-Procedure Intake & Readiness Form (IMG_5189)",
+      note: "Unit workflow document for demographics, risk factors, labs, medication reconciliation, contrast metrics, and device planning"
     },
     {
       src: "CardPics/NEJMra011883_f1.jpg",
-      title: "Coronary and chamber anatomy overview",
-      note: "Rapid anatomy orientation before procedure planning"
+      title: "Figure: Coronary Artery Anatomy and ACS Phenotypes",
+      note: "Educational anatomy figure used for pre-case orientation and lesion mechanism review"
     },
     {
       src: "CardPics/jrv250028f1.jpg",
-      title: "Peripheral venous thrombosis anatomy",
-      note: "Complication-awareness visual for vascular access planning"
+      title: "Figure: Superficial Venous Thrombosis Sites and Pathophysiology",
+      note: "Access-complication awareness visual for upper/lower extremity thrombosis patterns"
     },
     {
       src: "CardPics/1-s2.0-S0735109722048768-gr3.jpg",
-      title: "Central venous access landmark illustration",
-      note: "Neck/chest vascular relationships relevant to line placement"
+      title: "Figure: Central Venous Access Landmark Anatomy",
+      note: "Neck/chest vascular relationships relevant to line placement and complication avoidance"
     },
     {
       src: "CardPics/1-s2.0-S1936879813008029-gr1.jpg",
-      title: "Peripheral arterial anatomy reference",
-      note: "Lower-extremity arterial orientation for access and complications"
+      title: "Figure: Peripheral Arterial Anatomy Reference",
+      note: "Lower-extremity arterial orientation for femoral access planning and complication recognition"
     },
     {
       src: "CardPics/1-s2.0-S193687981830712X-gr1.jpg",
-      title: "General cath preparation anatomy reference",
-      note: "Supplemental pre-procedure positioning and anatomy visual"
+      title: "Figure: Supplemental Cath Procedure Orientation View",
+      note: "Supplemental fluoroscopic anatomy/positioning reference for pre-procedure briefing"
     }
   ],
   "rn-advanced-ffr": [
     {
       src: "CardPics/1-s2.0-S0735109716334301-gr4.jpg",
-      title: "FFR recording with intravenous adenosine",
-      note: "Pressure-wire tracing during induced hyperemia"
+      title: "Figure 4. FFR Recording With Intravenous Adenosine",
+      note: "Source context: Standardization of Fractional Flow Reserve Measurements (J Am Coll Cardiol, 2016)"
     },
     {
       src: "CardPics/1-s2.0-S1936879818310331-gr1.jpg",
-      title: "iFR pullback concept",
-      note: "Wave-free resting index without adenosine"
+      title: "Figure 1. iFR Pullback Performed Pre-PCI",
+      note: "Source context: iFR GRADIENT Registry primary results (JACC: Cardiovascular Interventions, 2018)"
     },
     {
       src: "CardPics/jrv220002f2.jpg",
-      title: "Coronary artery anatomy and ACS mechanisms",
-      note: "Background anatomy and lesion pathophysiology"
+      title: "Figure: Coronary Artery Anatomy and ACS Mechanisms",
+      note: "Background anatomy and lesion pathophysiology used for physiology-guided PCI decision support"
     },
     {
       src: "CardPics/1-s2.0-S0735109708010358-gr2.jpg",
-      title: "Additional FFR waveform reference",
-      note: "Supplemental pressure-ratio tracing example"
+      title: "Figure: Supplemental Pressure-Wire Tracing (FFR)",
+      note: "Additional pressure-ratio waveform example for hyperemic interpretation"
     },
     {
       src: "CardPics/1-s2.0-S1936879816320866-gr1.jpg",
-      title: "Physiology-guided lesion assessment figure",
-      note: "Additional visual support for wire-based physiology"
+      title: "Figure: Physiology-Guided Lesion Assessment",
+      note: "Supplemental visual support for pressure-wire based lesion significance mapping"
     }
   ],
   "rn-advanced-lhc": [
     {
       src: "CardPics/1-s2.0-S1936879816319082-gr12.jpg",
-      title: "Evolving transseptal catheterization techniques",
-      note: "Central illustration for structural-heart transseptal workflows"
+      title: "Figure 12. Central Illustration: Evolving Indications and Contemporary Techniques of Transseptal Catheterization",
+      note: "Source context: Transseptal Techniques for Emerging Structural Heart Interventions (JACC: Cardiovascular Interventions, 2016)"
     },
     {
       src: "CardPics/1-s2.0-S1936879814009236-gr9.jpg",
-      title: "Two-chamber vs three-chamber fluoroscopic views",
-      note: "Projection differences for annular and leaflet visualization"
+      title: "Figure: Two-Chamber vs Three-Chamber Fluoroscopic Views",
+      note: "Projection differences affecting annular sizing and leaflet-segment visualization"
     },
     {
       src: "CardPics/1-s2.0-S1936879821021749-gr1.jpg",
-      title: "Transseptal projection geometry",
-      note: "RAO/LAO and cranial/caudal orientation planning"
+      title: "Figure: Transseptal Projection Geometry (RAO/LAO, CRA/CAU)",
+      note: "Orientation planning diagram for puncture site targeting and safe septal traversal"
     },
     {
       src: "CardPics/1-s2.0-S0735109722070267-gr3.jpg",
-      title: "Transseptal puncture fluoroscopic sequence",
-      note: "Stepwise fluoroscopic positioning during puncture workflow"
+      title: "Figure: Transseptal Puncture Fluoroscopic Sequence",
+      note: "Stepwise fluoroscopic views during transseptal needle/sheath positioning"
     },
     {
       src: "CardPics/1-s2.0-S0735109722075581-gr1.jpg",
-      title: "Transseptal crossing fluoroscopic example",
-      note: "Illustrates catheter trajectory and transseptal crossing"
+      title: "Figure: Transseptal Crossing Example",
+      note: "Representative catheter trajectory during left-atrial crossing"
     },
     {
       src: "CardPics/1-s2.0-S1936879814009236-gr1.jpg",
-      title: "Left-sided structural viewing angles",
-      note: "Projection orientation for transcatheter left-heart interventions"
+      title: "Figure: Standard Viewing Angles for Left-Sided Structural Interventions",
+      note: "Projection orientation reference for transcatheter left-heart procedures"
     }
   ],
   "rn-advanced-rhc": [
     {
       src: "CardPics/NEJMvcm1212416_f3.jpg",
-      title: "Right-heart pressure waveforms and normal ranges",
-      note: "RA, RV, PA, and PCWP reference pressure profiles"
+      title: "Figure: Right-Heart Pressure Waveforms and Normal Ranges",
+      note: "Reference profiles for RA, RV, PA, and PCWP hemodynamic interpretation"
     },
     {
       src: "CardPics/1-s2.0-S2213177923001968-gr2.jpg",
-      title: "Pulmonary artery catheter goals and technical points",
-      note: "Selection context, leveling, and hemodynamic targets"
+      title: "Figure: Pulmonary Artery Catheter Goals and Technical Aspects",
+      note: "Patient selection, transducer leveling/zeroing, and hemodynamic targets"
     },
     {
       src: "CardPics/1-s2.0-S1936878X22003989-gr8.jpg",
-      title: "Supplemental right-heart hemodynamic visual",
-      note: "Additional reference for catheter position and interpretation"
+      title: "Figure: Supplemental Right-Heart Hemodynamic Visual",
+      note: "Additional reference for catheter position recognition and waveform interpretation"
     }
   ],
   "rn-advanced-radial": [
     {
       src: "CardPics/1-s2.0-S1936879821003575-gr2.jpg",
-      title: "Radial access anatomy",
-      note: "Surface landmarks and adjacent structures for radial puncture"
+      title: "Figure: Radial Access Anatomy and Surface Landmarks",
+      note: "Anatomic relationships for radial puncture and neurovascular protection"
     },
     {
       src: "CardPics/1-s2.0-S1936879818309245-gr1.jpg",
-      title: "Palmar and dorsal arterial arch anatomy",
-      note: "Distal hand circulation relevant to radial access safety"
+      title: "Figure: Palmar and Dorsal Arterial Arch Anatomy",
+      note: "Distal hand collateral circulation relevant to radial access safety assessment"
     }
   ],
   "rn-advanced-ivus": [
     {
       src: "CardPics/1-s2.0-S1936879813018116-gr1.jpg",
-      title: "Supplemental intravascular imaging reference",
-      note: "Additional anatomy/imaging context for IVUS interpretation"
+      title: "Figure: Supplemental Intravascular Imaging Reference",
+      note: "Additional vessel anatomy/imaging context for IVUS interpretation workflows"
     }
   ],
   "rn-advanced-orbital": [
     {
       src: "CardPics/1-s2.0-S1936879821007925-gr4.jpg",
-      title: "Supplemental atherectomy technique visual",
-      note: "Additional procedural imaging context for orbital atherectomy"
+      title: "Figure: Supplemental Orbital Atherectomy Technique Visual",
+      note: "Additional procedural imaging context for crown passes and lesion modification"
     }
   ]
 };
