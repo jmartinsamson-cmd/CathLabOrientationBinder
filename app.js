@@ -485,6 +485,10 @@ function printRnLaminatedQuickGuide() {
 function createMedicationQuickGuide(sectionId) {
   if (sectionId !== "rn-med-quick-guide") return null;
 
+  const sortedMedicationRows = [...medicationQuickGuideRows].sort((a, b) =>
+    a.medication.localeCompare(b.medication)
+  );
+
   const wrap = document.createElement("section");
   wrap.className = "med-quick-guide";
 
@@ -500,7 +504,7 @@ function createMedicationQuickGuide(sectionId) {
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
-  ["Medication", "Mix", "Start", "Titration", "Max", "Notes"].forEach((label) => {
+  ["Medication", "Standard Mix", "Starting Dose/Rate", "Titration", "Maximum", "Clinical Notes"].forEach((label) => {
     const th = document.createElement("th");
     th.scope = "col";
     th.textContent = label;
@@ -509,7 +513,7 @@ function createMedicationQuickGuide(sectionId) {
   thead.appendChild(headerRow);
 
   const tbody = document.createElement("tbody");
-  medicationQuickGuideRows.forEach((row) => {
+  sortedMedicationRows.forEach((row) => {
     const tr = document.createElement("tr");
     [row.medication, row.mix, row.start, row.titration, row.max, row.notes].forEach((value) => {
       const td = document.createElement("td");
@@ -524,7 +528,7 @@ function createMedicationQuickGuide(sectionId) {
 
   const cardWrap = document.createElement("div");
   cardWrap.className = "med-laminated-cards";
-  medicationQuickGuideRows.forEach((row) => {
+  sortedMedicationRows.forEach((row) => {
     const card = document.createElement("article");
     card.className = "med-laminated-card";
 
