@@ -1,0 +1,15 @@
+.git
+.gitignore
+.github
+.codacy
+.vscode
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
+desktop.ini
+ocr_output/
+template_extracted.txt
+template_links.json

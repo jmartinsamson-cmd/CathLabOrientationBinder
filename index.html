@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cath Lab Orientation Binder</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Cath Lab Orientation Binder</h1>
+        <p class="subtitle">Interactive RN + RT onboarding with printable output</p>
+      </div>
+      <button id="printBtn" class="btn btn-primary" type="button">Print Current View</button>
+    </header>
+
+    <main class="layout">
+      <aside class="panel controls" aria-label="Binder Controls">
+        <h2>Controls</h2>
+
+        <label for="roleFilter">Track</label>
+        <select id="roleFilter">
+          <option value="all">All (Shared + RN + RT)</option>
+          <option value="shared">Shared Core Only</option>
+          <option value="rn">RN Track</option>
+          <option value="rt">RT Track</option>
+        </select>
+
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search topics, competencies, equipment..." />
+
+        <div class="button-row">
+          <button id="expandAllBtn" class="btn" type="button">Expand All</button>
+          <button id="collapseAllBtn" class="btn" type="button">Collapse All</button>
+        </div>
+
+        <section class="panel pdf-panel">
+          <h3>Print Packet by Track</h3>
+          <label for="printTrack">Packet Scope</label>
+          <select id="printTrack">
+            <option value="all">All (Shared + RN + RT)</option>
+            <option value="shared">Shared Core Only</option>
+            <option value="rn">RN Track</option>
+            <option value="rt">RT Track</option>
+          </select>
+          <button id="printTrackBtn" class="btn btn-primary" type="button">Print Selected Packet</button>
+          <button id="printQuickGuideBtn" class="btn" type="button">Print RN Quick Guide</button>
+          <button id="printLaminatedBtn" class="btn" type="button">Print Laminated RN Card</button>
+        </section>
+
+        <button id="resetBtn" class="btn btn-danger" type="button">Reset Saved Progress</button>
+
+        <section class="progress-card" aria-live="polite">
+          <h3>Progress</h3>
+          <p><strong id="completedCount">0</strong> / <span id="totalCount">0</span> complete</p>
+          <progress id="progressBar" class="progress-track" value="0" max="100" aria-label="Completion progress"></progress>
+          <p id="progressPercent" class="muted">0%</p>
+        </section>
+
+        <section class="panel pdf-panel">
+          <h3>Source Template PDF</h3>
+          <p class="muted">Use this as your reference standard for competencies and requirements.</p>
+          <a href="Cath%20Lab%20%26%20EP%20Lab%20-%20Addendum%20to%20Procedural%20Core%20OAE%20Final%209.27.2023.pdf" target="_blank" rel="noopener noreferrer">
+            Open Template PDF
+          </a>
+        </section>
+      </aside>
+
+      <section class="panel binder" aria-label="Orientation Binder Content">
+        <div id="emptyState" class="empty-state" hidden>
+          No sections match your current filter. Try changing track or search.
+        </div>
+        <div id="sectionsContainer"></div>
+      </section>
+    </main>
+
+    <footer class="footer muted">
+      <small>
+        Notes and checklist progress save automatically in your browser for this device.
+      </small>
+    </footer>
+
+    <script src="training-links.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>

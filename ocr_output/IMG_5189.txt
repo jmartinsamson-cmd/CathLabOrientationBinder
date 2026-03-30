@@ -1,0 +1,64 @@
+DATE:
+PROCEDURE:
+Height:
+MD/STAFF:
+Weight:
+Allergies: PCN
+lodine
+Codeine
+Sulfa
+Contrast:
+Used:
+Waste:
+Fluoro Time:
+mGy:
+MEDICAL HISTORY:
+HTN
+DM
+CHF
+Insurance:
+Private
+HIGH CHOL
+MI
++FH
+PVD
+HD
+Medicare
+COPD
+CVA/TIASLEEPAPNEA
+Angina class:
+1I
+IV
+SMOKER-CURRENT/ FORMER/ NEVER
+Anti-angina meds within 2 weeks:
+PTCA/STENT
+CCB
+Long acting nitrate
+CABG
+BB
+Ranexa
+LABS:
+BUN/Crt
+Laps:
+INR
+Needles:
+Hgb/Hct
+Sutures:
+MEDICATIONS:
+Coumadin Eliquis Pradaxa Xarelto:
+Trop
+Raytex:
+Plavix Brilinta Effient:
+Blades:
+Heparin Lovenox:
+Bovie:
+Insulin Metformin:
+Instruments:
+Aspirin:
+Lesion
+Vessel
+Guide Cath
+Guide Wire
+Balloon
+Stent
+Definition

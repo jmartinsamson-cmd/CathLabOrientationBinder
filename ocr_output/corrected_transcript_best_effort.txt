@@ -1,0 +1,258 @@
+===== IMG_1700.HEIC =====
+Nitroglycerin (Tridil)
+- Low dose: 5–50 mcg/min
+- Increase by 5 mcg every 5 min
+- High dose: 50–100 mcg/min
+- Mix in glass; comes pre-mixed
+
+Dose conversion (likely):
+- 5 mcg/min = 3 mL/hr
+- 10 mcg/min = 6 mL/hr
+- 15 mcg/min = 9 mL/hr
+- 20 mcg/min = 12 mL/hr
+[Verify card values from original image]
+
+===== IMG_2490.HEIC =====
+Diamondback Cocktail
+- Verapamil: 0.5 mg [verify]
+- Nitroglycerin (50 mL): 5 mg
+- ViperSlide: 20 mL
+
+Coronary mix:
+- Mix in 1000 mL 0.9% NS
+
+Alternate mix:
+- Nitroglycerin (25 mL): 2.5 mg
+- ViperSlide: 20 mL
+- (No verapamil)
+
+===== IMG_2491.HEIC =====
+Dobutrex (Dobutamine)
+- 500 mg in 250 mL D5W
+- Concentration: 2000 mcg/mL
+- Start: 2–3 mcg/kg/min
+- Increase by 2–3 mcg/kg/min every 10–30 min
+
+[Dose table present but OCR is heavily degraded; verify from image]
+
+===== IMG_2492.HEIC =====
+Dobutamine Challenge
+- 500 mg / 250 mL
+- Start at 5 mcg/kg/min
+- Increase to 10 mcg/kg/min after 3 min
+- Continue titration per physician
+- Some physicians may start at 2.5 mcg/kg/min
+- Follow physician orders
+
+===== IMG_2493.HEIC =====
+Dopamine Drip
+- 400 mg / 250 mL [OCR read 1000 mcg/mL; mathematically this is 1600 mcg/mL, verify card]
+- Low dose: 0.5–3 mcg/kg/min
+- Medium dose: 3–10 mcg/kg/min
+- High dose: 10–20 mcg/kg/min
+- Increase by 2 mcg/kg/min every 30 min [verify]
+
+[Weight/dose conversion table present; OCR partially unreadable]
+
+===== IMG_2494.HEIC =====
+Insulin Drip
+- Mix 100 units regular insulin in 100 mL NS
+- 1 unit = 1 mL
+- 10 units/hr = 10 mL/hr
+
+===== IMG_2495.HEIC =====
+Levophed (Norepinephrine)
+Single strength:
+- 4 mg / 250 mL D5W = 16 mcg/mL
+Double strength:
+- 8 mg / 250 mL D5W = 32 mcg/mL
+
+- Start: 2–20 mcg/min (typical card range)
+- Adjust every 5 min
+
+Selected dose conversion (likely):
+Double strength (32 mcg/mL)
+- 1 mcg/min = 1.88 mL/hr
+- 5 mcg/min = 9.4 mL/hr
+- 10 mcg/min = 18.8 mL/hr
+- 20 mcg/min = 37.5 mL/hr
+
+Single strength (16 mcg/mL)
+- 1 mcg/min = 3.75 mL/hr
+- 5 mcg/min = 18.8 mL/hr
+- 10 mcg/min = 37.5 mL/hr
+- 20 mcg/min = 75 mL/hr
+
+[Verify exact chart rows from image]
+
+===== IMG_2496.HEIC =====
+Lidocaine
+- Bolus: 50–100 mg
+- Infusion: 1–4 mg/min
+
+Single strength:
+- 1 g / 250 mL D5W
+- 2 g / 500 mL D5W
+
+Double strength:
+- 2 g / 250 mL D5W
+- 4 g / 500 mL D5W
+
+Likely conversion:
+Single strength:
+- 1 mg/min = 15 mL/hr
+- 2 mg/min = 30 mL/hr
+- 3 mg/min = 45 mL/hr
+- 4 mg/min = 60 mL/hr
+Double strength:
+- 1 mg/min = 7.5 mL/hr
+- 2 mg/min = 15 mL/hr
+- 3 mg/min = 22.5 mL/hr
+- 4 mg/min = 30 mL/hr
+
+===== IMG_2497.HEIC =====
+Neo-Synephrine (Phenylephrine)
+- Mix 10 mg / 250 mL D5W
+Start infusion:
+- To raise BP rapidly: 100–180 mcg/min
+Maintenance:
+- 40–60 mcg/min
+OR
+Weight-based:
+- Start 0.5 mcg/kg/min
+- Titrate by 0.2 mcg/kg/min every 5 min
+
+===== IMG_2498.HEIC =====
+Nicardipine
+- Pre-mixed: 20 mg / 200 mL D5W
+- Titrate: 2.5 to 15 mg/hr
+- Start at 5 mg/hr (50 mL/hr)
+- Titrate up/down every 10–15 min by 2.5 mg/hr
+
+===== IMG_2499.HEIC =====
+Nipride (Sodium Nitroprusside)
+- Protect from light
+- Mixed as 50 mg / 250 mL D5W
+- Adjust by 0.5 mcg/kg/min every 3–5 min
+
+[Compatibility note is unclear in OCR; verify original image]
+[Weight-based conversion table present; partially unreadable]
+
+===== IMG_2500.HEIC =====
+Nitroglycerin (Tridil)
+- Low dose: 5–50 mcg/min
+- Increase by 5 mcg every 5 min
+- High dose: 50–100 mcg/min
+- Mix in glass; comes pre-mixed
+
+===== IMG_2501.HEIC =====
+Precedex
+- Comes pre-mixed NS
+- Total volume = 100 mL
+- Infusion rate: 0.2–0.7 mcg/kg/hr
+- Watch for bradycardia and hypotension
+
+===== IMG_2502.HEIC =====
+Sedation Medications – Reversal
+Romazicon (to reverse Versed)
+- 0.2 mg IVP to start
+- Supplied as 0.1 mg/mL
+
+Narcan (to reverse opiates)
+- 0.4–2 mg IVP every 3 min [verify interval]
+- Supplied as 0.4 mg/mL
+
+===== IMG_2503.HEIC =====
+Rotablator Cocktail (of the coronary arteries)
+- Mix in a 1000 mL bag of NS
+- NTG: 5 mg (#100 mcg/mL) = 50 mL
+- Rotaglide: 20 cc
+- Heparin: [unreadable; verify]
+- Verapamil: 4 mL (10 mg)
+- Per physician preference
+
+===== IMG_2504.HEIC =====
+Vasopressin
+- Dose: 100 units / 100 mL NS
+- Start infusion at 0.04 units/min (2.4 mL/hr)
+- Maintain MAP > 70 mmHg
+- Titrate by 0.01 units/min every 10–15 min
+- Max dose: 0.07 units/min
+
+Pulseless/code situation note:
+- 40 units given as one dose in place of first or second epinephrine dose [verify exact wording]
+
+===== IMG_5189.HEIC =====
+Procedure Sheet Template
+- DATE:
+- PROCEDURE:
+- Height:
+- MD/STAFF:
+- Weight:
+- Allergies: PCN, Iodine, Codeine, Sulfa
+- Contrast: Used / Waste
+- Fluoro Time:
+- mGy:
+
+MEDICAL HISTORY:
+- HTN
+- DM
+- CHF
+- HIGH CHOL
+- MI
+- +FH
+- PVD
+- HD
+- COPD
+- CVA/TIA
+- SLEEP APNEA
+
+Insurance:
+- Private
+- Medicare
+
+Angina class:
+- I / II / III / IV
+
+SMOKER: CURRENT / FORMER / NEVER
+
+Anti-angina meds within 2 weeks:
+- PTCA/STENT
+- CCB
+- Long acting nitrate
+- CABG
+- BB
+- Ranexa
+
+LABS:
+- BUN/Cr
+- INR
+- Hgb/Hct
+- Trop
+
+Supplies/Counts fields include items such as:
+- Needles
+- Sutures
+- Raytex
+- Blades
+- Bovie
+- Instruments
+
+MEDICATIONS (checkbox style):
+- Coumadin / Eliquis / Pradaxa / Xarelto
+- Plavix / Brilinta / Effient
+- Heparin / Lovenox
+- Insulin / Metformin
+- Aspirin
+
+Lesion/Device table headings include:
+- Lesion
+- Vessel
+- Guide Cath
+- Guide Wire
+- Balloon
+- Stent
+- Definition
+
+---
+Note: This is a best-effort correction from OCR. Please verify doses and titration values against the original images before clinical use.

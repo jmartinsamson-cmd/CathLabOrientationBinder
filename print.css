@@ -1,0 +1,148 @@
+@page {
+  size: letter;
+  margin: 0.6in;
+}
+
+* {
+  box-shadow: none !important;
+}
+
+body {
+  background: white !important;
+  color: #000;
+  font-size: 11pt;
+}
+
+.topbar,
+.controls,
+.footer,
+.btn,
+#printBtn {
+  display: none !important;
+}
+
+.layout {
+  display: block;
+  padding: 0;
+}
+
+.binder {
+  border: none;
+  padding: 0;
+}
+
+.section-card {
+  border: 1px solid #999;
+  margin: 0 0 10pt;
+  page-break-inside: avoid;
+}
+
+.section-header {
+  border-bottom: 1px solid #999;
+  background: #f2f2f2;
+}
+
+.section-body {
+  display: block !important;
+}
+
+.section-tag {
+  border-color: #666;
+  color: #333;
+}
+
+.notes-label,
+textarea {
+  display: none;
+}
+
+.signoff-wrap {
+  margin-top: 8pt;
+  border-top: 1px solid #aaa;
+  padding-top: 6pt;
+}
+
+.signoff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6pt;
+}
+
+.signoff-field input {
+  border: 1px solid #888;
+  min-height: 22pt;
+}
+
+.signoff-complete {
+  display: inline-flex;
+  gap: 6pt;
+  margin-top: 6pt;
+}
+
+.med-quick-guide-intro {
+  margin-bottom: 8pt;
+  font-size: 9.5pt;
+}
+
+.med-quick-guide-table-wrap {
+  overflow: visible;
+  border: none;
+}
+
+.med-quick-guide-table {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+}
+
+.med-quick-guide-table th,
+.med-quick-guide-table td {
+  border: 1px solid #999;
+  padding: 4pt;
+  vertical-align: top;
+}
+
+.med-quick-guide-table th {
+  background: #f2f2f2;
+}
+
+.med-quick-guide-table tr {
+  page-break-inside: avoid;
+}
+
+body.print-laminated .med-quick-guide-intro {
+  display: none;
+}
+
+body.print-laminated .med-quick-guide-table-wrap {
+  display: none;
+}
+
+body.print-laminated .med-laminated-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8pt;
+}
+
+body.print-laminated .med-laminated-card {
+  border: 1px solid #777;
+  border-radius: 6pt;
+  padding: 5pt 6pt;
+  page-break-inside: avoid;
+}
+
+body.print-laminated .med-laminated-title {
+  margin: 0 0 4pt;
+  font-size: 10pt;
+}
+
+body.print-laminated .med-laminated-line {
+  margin: 0 0 3pt;
+  font-size: 8.3pt;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
