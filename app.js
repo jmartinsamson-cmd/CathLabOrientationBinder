@@ -191,6 +191,43 @@ const sections = [
     ]
   },
   {
+    id: "rn-advanced-ivus",
+    role: "rn",
+    title: "RN Advanced Procedures: Intravascular Ultrasound (IVUS)",
+    items: [
+      "Understand IVUS physics: High-frequency ultrasound (20-50 MHz) transducer at catheter tip provides cross-sectional coronary images",
+      "Know IVUS equipment: Imaging console, transducer catheter (0.018\" compatible guide), compatibility with existing guidelinesystems",
+      "Pre-procedure responsibilities: Verify equipment functionality, prepare motorized pullback system (0.5-1.0 mm/sec), ensure saline flush solution available",
+      "Patient positioning and sheath preparation: Adequate anticoagulation (ACT >300 sec), 7 Fr minimum sheath, guide catheter engagement for optimal imaging",
+      "IVUS technique essentials: Advance guidewire first, track catheter over wire to lesion, motorized pullback from distal to proximal",
+      "Image interpretation basics: Intima (inner layer), media (muscular layer), adventitia (outer layer); assess plaque distribution and lumen area",
+      "Clinical uses of IVUS: Assess plaque severity when angiography unclear, guide complex PCI strategy, evaluate stent apposition post-deployment",
+      "IVUS-guided stent optimization: Verify stent expansion (internal diameter ≥90% of nominal), assess apposition (no malapposition), cover all plaque",
+      "Monitor for complications during IVUS: Transient slow flow, dissection (0.3-2%), perforation (rare); have reversal agents at bedside",
+      "Document findings: Record pullback length, identified lesions, stent dimensions pre/post deployment, recommendations for intervention",
+      "Nursing considerations: Prolonged procedure increases radiation and contrast exposure; monitor patient comfort, maintain anticoagulation, prepare for extended recovery"
+    ]
+  },
+  {
+    id: "rn-advanced-rhc",
+    role: "rn",
+    title: "RN Advanced Procedures: Right Heart Catheterization (RHC)",
+    items: [
+      "RHC indications: Assess pulmonary hypertension, evaluate cardiomyopathy severity, guide heart failure management, evaluate pericardial disease",
+      "Equipment preparation: Swan-Ganz catheter (7-8 Fr), pressure transducers (drift check: 0 mmHg at mid-axillary line), monitor shows RA/RV/PA/PCW waveforms",
+      "Catheter zeroing procedure: Open transducer to atmosphere, adjust graphic display to read 0 mmHg, repeat after patient repositioning, verify before measurements",
+      "Catheter positioning sequence: RA waveform (0-8 mmHg), RV systolic rise (15-30 mmHg systolic, end-diastolic 0-8 mmHg), PA branch entry (dicrotic notch appears)",
+      "PA wedge position and timing: Balloon inflation produces PAW tracing; measure at end-expiration for spontaneous breathing, measure at mid-inspiration if mechanically ventilated",
+      "Normal hemodynamic values (mmHg): RA mean 0-8, RV systolic/end-diastolic 15-30/0-8, PA systolic/diastolic 15-30/4-12, PAW mean 4-12, LV end-diastolic 3-12",
+      "Calculated parameters: Cardiac output (thermodilution or Fick method), cardiac index, systemic/pulmonary vascular resistance, stroke volume index",
+      "Oxygen saturation run: Sequential blood samples from RA → RV → PA to detect left-to-right shunts (Qp:Qs ratio >1.5 = significant shunt)",
+      "Fluoroscopic views: Posterior-anterior (PA) for RA access, left anterior oblique (LAO) for RV/PA visualization, catheter tip must be in PA 1-2 cm branch, not wedged",
+      "Critical technical points: Never inflate balloon beyond 1.5 cc air (causes PA rupture), maintain anticoagulation, keep catheter tip sterile, monitor for arrhythmias",
+      "Complications and management: VA rupture (hemoptysis/hypotension - emergency), arrhythmias (PVCs/SVT - reposition catheter), pulmonary infarction, thrombosis",
+      "Nursing monitoring during RHC: Watch for PACs, PVCs, SVT; note patient symptoms; observe for hemoptysis; maintain restraint on right arm; document all pressures and waveforms"
+    ]
+  },
+  {
     id: "rt-1",
     role: "rt",
     title: "RT Imaging, Radiation & Room Safety",
