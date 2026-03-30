@@ -138,7 +138,7 @@ const medicationQuickGuideRows = [
     start: "5–20 mcg/min",
     titration: "Increase 5–20 mcg/min every 3–5 min",
     max: "400 mcg/min (ICU guide)",
-    notes: "Card also shows low 5–50 and high 50–100 mcg/min"
+    notes: "Typical therapeutic range is 10–100 mcg/min based on clinical response"
   },
   {
     medication: "Dobutamine (Dobutrex)",
