@@ -228,6 +228,44 @@ const sections = [
     ]
   },
   {
+    id: "rn-advanced-lhc",
+    role: "rn",
+    title: "RN Advanced Procedures: Left Heart Catheterization (LHC)",
+    items: [
+      "Understand two access approaches: Retrograde (femoral/radial artery across aortic valve) vs. Transseptal (femoral vein across interatrial septum)",
+      "Retrograde approach: Most common for coronary angiography and pressure measurement; contraindicated in mechanical aortic valve or severe aortic stenosis",
+      "Transseptal approach: Required for structural heart interventions (mitral procedures, LAA closure, AFib ablation); uses ICE or fluoroscopy to locate fossa ovalis",
+      "Know normal LV pressures: LV systolic 90-140 mmHg, LVEDP ≤12 mmHg, mean aortic 70-105 mmHg; elevated LVEDP >12 mmHg indicates poor prognosis",
+      "Critical transducer zeroing: Must calibrate at mid-axillary line (mid-thoracic level) BEFORE measurements; recheck after patient repositioning",
+      "Pressure measurement timing: Record all pressures at END-expiration during normal breathing; respiratory variation can significantly affect PCWP and LVEDP",
+      "LVEDP vs. Pre-A pressure: LV pre-A pressure (just before atrial contraction) correlates better with mean LA pressure than LVEDP; use for heart failure assessment",
+      "Recognize abnormal pressure waveforms: Large V waves (mitral regurgitation), catheter whip artifact (reposition catheter), equalized diastolic pressures (tamponade/constriction)",
+      "Transseptal catheterization risks: Cardiac perforation, pericardial tamponade, aortic puncture, thromboembolism; serious complication rate 1-2%",
+      "Prepare appropriate catheters: Pigtail for LV, Judkins or Amplatz for coronaries; have ICE/TEE setup ready for transseptal cases",
+      "Cardiac output measurement: Thermodilation via RA injection (cold saline) with PA measurement; average ≥3 measurements with <10% variation; unreliable with severe regurgitation",
+      "Left ventriculography: Assess ejection fraction, regional wall motion, mitral regurgitation severity; defer if diagnostic echo available to minimize contrast exposure"
+    ]
+  },
+  {
+    id: "rn-advanced-ffr",
+    role: "rn",
+    title: "RN Advanced Procedures: Functional Flow Reserve (FFR/iFR/FFRangio)",
+    items: [
+      "Understand FFR physiology: Pressure-wire measurement of distal to aortic pressure ratio at maximal hyperemia; FFR ≤0.80 = ischemia warrants PCI, >0.80 = medical therapy",
+      "FFR clinical evidence: Landmark DEFER, FAME, FAME 2 trials show FFR-guided PCI reduces death/MI/events; ACC/AHA Class IIa recommendation for intermediate stenoses",
+      "FFR technique: Advance pressure wire 2-3 cm distal to stenosis, zero at catheter tip, induce maximal hyperemia, measure during steady-state (typically 2-3 min for IV adenosine)",
+      "Hyperemia induction methods: IV adenosine 140 mcg/kg/min via infusion pump (gold standard) or intracoronary bolus 40-200 mcg for faster onset/offset",
+      "Adenosine side effects: Flushing, chest discomfort, dyspnea, transient AV block (resolve within seconds); continue infusion despite discomfort if patient tolerates",
+      "FFR interpretation: FFR <0.75 strongly indicates ischemia; 0.75-0.80 borderline (consider clinical context); >0.80 suggests defer PCI for medical therapy",
+      "iFR (Instantaneous Wave-Free Ratio) alternative: Resting index measuring diastolic pressures without adenosine; iFR SWEDEHEART trial showed noninferior outcomes vs. FFR",
+      "iFR pullback technique: Maps physiological severity along entire vessel; identifies multiple lesions and predicts post-PCI hemodynamic outcome",
+      "FFRangio technology: Computer-based software calculates FFR from angiographic images alone without pressure wire or adenosine; 3D reconstruction applies resistance models",
+      "FFRangio evidence: ALL-RISE trial (2026) demonstrated FFRangio-guided revascularization noninferior to pressure-wire FFR; improves procedural efficiency",
+      "Nursing responsibilities: Prepare pressure wire system with proper calibration, assist with adenosine IV pump setup or IC bolus, monitor for side effects",
+      "Documentation: Record FFR/iFR values, pressure tracings, hyperemia quality, adenosine response, clinical recommendation (defer vs. intervene)"
+    ]
+  },
+  {
     id: "rt-1",
     role: "rt",
     title: "RT Imaging, Radiation & Room Safety",
