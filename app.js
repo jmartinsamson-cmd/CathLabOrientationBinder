@@ -56,6 +56,141 @@ const sections = [
     ]
   },
   {
+    id: "rn-advanced-dobutamine",
+    role: "rn",
+    title: "RN Advanced Procedures: Dobutamine Stress Echocardiography",
+    items: [
+      "Understand pre-procedure preparation: NPO, beta-blocker hold (24-48 hr), consent, baseline ECG",
+      "Understand dobutamine protocol stages: 5-10 mcg/kg/min initial, increase 10 mcg/kg/min every 3 min",
+      "Recognize target endpoint: 85% age-predicted maximum heart rate or wall motion abnormality",
+      "Know atropine augmentation: 0.25-0.3 mg IV increments to max 1.2-2.0 mg if target HR not achieved",
+      "Recognize termination criteria: target HR achieved, new wall motion changes, severe arrhythmias, hypertension (SBP >220), symptomatic hypotension, angina, intolerable symptoms",
+      "Know contraindications: acute MI, severe arrhythmia, malignant HTN, LVOT obstruction, severe AS",
+      "Maintain emergency medications: beta-blocker (metoprolol), nitroglycerin, atropine, ACLS meds",
+      "Monitor for complications: nausea, headache, tremor, anxiety, chest pain, arrhythmias",
+      "Understand post-procedure monitoring: vital signs stable for 15-30 min before discharge"
+    ]
+  },
+  {
+    id: "rn-advanced-impella",
+    role: "rn",
+    title: "RN Advanced Procedures: Impella Mechanical Circulatory Support",
+    items: [
+      "Understand device types: 2.5 (2.5 L/min), CP (4 L/min), 5.0/5.5 (5.5 L/min), RP (RV support)",
+      "Know hemodynamic targets: MAP ≥65 mmHg, CI >2.0, PCWP 18 mmHg, SVO2 >60%, lactate ≤3",
+      "Understand position verification: Impella CP inlet 3.5 cm below aortic annulus via echo",
+      "Recognize position problems: suction alarms, worsening hemodynamics, hemolysis signs, arrhythmias",
+      "Calculate native cardiac output: Total CO - Impella flow from controller estimate",
+      "Understand anticoagulation: UFH infusion targeting aPTT 50-70 sec; monitor daily for hemolysis",
+      "Know weaning criteria: off vasopressors/inotropes, adequate native CO, end-organ function resolved, lactate ≤2",
+      "Understand weaning protocol: reduce performance level incrementally (P-8→P-6→P-4→P-2) with 15-30 min monitoring",
+      "Maintain limb immobilization: assess pulses, capillary refill, temperature every 1-2 hours for ischemia",
+      "Coordinate 24-hour echo access and position verification protocol"
+    ]
+  },
+  {
+    id: "rn-advanced-iabp",
+    role: "rn",
+    title: "RN Advanced Procedures: Intra-Aortic Balloon Pump (IABP) Management",
+    items: [
+      "Understand IABP timing: 1:1 full support, 1:2 or 1:3 for weaning; inflate mid-diastole (dicrotic notch), deflate just before systole",
+      "Understand device settings and troubleshooting timing on arterial waveform",
+      "Know hemodynamic targets: MAP ≥65 mmHg, HR ≤100, adequate UOP (>0.5 mL/kg/hr), lactate ≤3, inotropic score 20",
+      "Recognize anticoagulation controversy: institutional protocol varies (universal vs selective heparin); follow local protocol",
+      "Monitor platelet count: baseline, 24 hours, daily (thrombocytopenia risk)",
+      "Assess limb perfusion every 1-2 hours: pain, pallor, pulselessness, paresthesias, paralysis (5 P's)",
+      "Maintain strict bed rest with affected leg straight; prevent flexion at groin",
+      "Know weaning readiness criteria: achieve 5 of 8 targets (HR, MAP, SVO2, PaO2, lactate, PCWP, inotropic score, UOP)",
+      "Understand weaning steps: 1:1 → 1:2 (2-4 hr) → 1:3 (2-4 hr) → consider removal",
+      "Know contraindications: moderate-severe aortic regurgitation, aortic dissection, severe peripheral arterial disease"
+    ]
+  },
+  {
+    id: "rn-advanced-ekos",
+    role: "rn",
+    title: "RN Advanced Procedures: EKOS Catheter-Directed Thrombolysis",
+    items: [
+      "Understand indications: acute PE (massive/submassive), proximal PE in main/lobar pulmonary arteries, RV/LV ratio ≥0.9-1.0",
+      "Know t-PA dosing: unilateral 1 mg/hr × 24 hr (single catheter), bilateral 1 mg/hr per catheter × 12 hr",
+      "Maintain saline coolant: 35 mL/hr through each catheter during infusion",
+      "Understand anticoagulation during infusion: continue UFH at intermediate intensity (aPTT 40-60 sec), NOT full therapeutic",
+      "Monitor for bleeding: access site, GI, GU, intracranial during infusion",
+      "Perform neurological assessment every 4 hours during infusion",
+      "Know thrombolysis contraindications: active bleeding, recent stroke (3 mo), recent major surgery (14 days), intracranial pathology, severe uncontrolled HTN, bleeding diathesis",
+      "Understand post-removal hemostasis: manual compression ≥5 min, wait 15 min after hemostasis, then resume full therapeutic anticoagulation",
+      "Monitor hemoglobin/hematocrit serially; check fibrinogen if bleeding occurs",
+      "Coordinate post-procedure imaging: echo and CT to assess RV/LV ratio improvement and Miller Index"
+    ]
+  },
+  {
+    id: "rn-advanced-rotablator",
+    role: "rn",
+    title: "RN Advanced Procedures: Rotational Atherectomy (Rotablator)",
+    items: [
+      "Understand RotaWire: 0.009-inch floppy or extra support; keep distal tip in field of view; maintain ≥5 mm from burr",
+      "Know Rotablator speeds: 140,000-180,000 rpm; burr-to-vessel ratio 0.5-0.7",
+      "Prepare RotaGlide solution or alternative cocktail: UFH 10,000 units + nitroglycerin 400 mcg + verapamil 10 mg in 1L saline",
+      "Know RotaGlide contraindication: egg or olive oil allergy; verify allergy status before procedure",
+      "Set up continuous infusion of lubricant through burr system",
+      "Understand anticoagulation: UFH bolus to achieve ACT 250-350 sec (lower 200-250 if using GP IIb/IIIa inhibitor)",
+      "Prepare intracoronary nitroglycerin 100-200 mcg: give before first run and repeat intermittently",
+      "Understand temporary pacing consideration: right coronary or dominant left circumflex (prevent bradycardia)",
+      "Assist with technique: pecking motion (15-20 sec runs), allow cooling between runs, maintain ≥5 mm wire-to-burr distance",
+      "Monitor for complications: perforation, dissection, slow flow/no-reflow; have adenosine, verapamil, nicardipine ready"
+    ]
+  },
+  {
+    id: "rn-advanced-radial",
+    role: "rn",
+    title: "RN Advanced Procedures: Radial Artery Vasodilator Cocktail",
+    items: [
+      "Understand purpose: prevent radial spasm, reduce discomfort, reduce RAO, facilitate catheter manipulation",
+      "Know optimal cocktail: verapamil 2.5-5 mg IA + nitroglycerin 100-200 mcg IA (combination superior to single agent)",
+      "Understand alternative agents: diltiazem 2.5-5 mg IA or nicardipine 250-500 mcg IA alone; nitroglycerin alone less effective",
+      "Know alternative route: subcutaneous nitroglycerin 0.1% 0.5 mL BEFORE radial puncture (more effective than IA in some studies)",
+      "Administer cocktail slowly IA through sheath side port immediately after sheath insertion",
+      "Recognize contraindications/cautions: use smaller doses in hypotension (SBP <100), inferior MI with RV involvement, reduced LVEF, severe AS, cardiogenic shock",
+      "Monitor blood pressure before and after administration",
+      "Recognize vasovagal reaction signs during administration",
+      "Know mandatory anticoagulation: UFH 50 units/kg (max 5,000 units) or equivalent enoxaparin/bivalirudin to ALL patients to prevent RAO",
+      "Assess radial pulse throughout procedure; monitor for access site complications"
+    ]
+  },
+  {
+    id: "rn-advanced-orbital",
+    role: "rn",
+    title: "RN Advanced Procedures: Orbital Atherectomy (Diamondback)",
+    items: [
+      "Understand ViperWire: 0.012-inch nitinol body, 0.014-inch tip; keep distal tip in field of view; maintain ≥5 mm from crown",
+      "Know Diamondback 360 specifications: 1.25 mm diamond-coated crown, two speeds (80,000 rpm, 120,000 rpm)",
+      "Verify guide catheter size: ≥6F required (7F if using guide extension)",
+      "Know key difference from rotablator: NO continuous infusion lubricant required; use standard saline flush only",
+      "Prepare intracoronary nitroglycerin 100-200 mcg: give before first run and intermittently to minimize slow flow/no-reflow",
+      "Understand anticoagulation: UFH bolus to achieve ACT 250-350 sec (lower 200-250 if using GP IIb/IIIa inhibitor)",
+      "Understand mandatory angioplasty: mandatory non-compliant balloon angioplasty AFTER atherectomy before stent",
+      "Know mandatory post-stent dilatation: non-compliant balloon 1:1 vessel sizing, ≥18 atmospheres",
+      "Listen for audible pitch change when device contacts calcium; use smooth 1 mm/sec advancement, never force",
+      "Monitor for complications: dissection (2.3%), perforation (0.9%), slow flow; have adenosine, verapamil, nicardipine ready"
+    ]
+  },
+  {
+    id: "rn-advanced-act",
+    role: "rn",
+    title: "RN Advanced Procedures: Activated Clotting Time (ACT) Monitoring",
+    items: [
+      "Know ACT devices and differences: Hemochron reads ~50 sec HIGHER than HemoTec/i-STAT; know your lab's device",
+      "Standard PCI target (HemoTec): 250-300 sec; with GP IIb/IIIa: 200-250 sec; (Hemochron: add 50 sec to each)",
+      "Higher ACT targets (300-350 HemoTec) for: CTO, ACS, complex prolonged cases, no oral antiplatelet therapy",
+      "Lower ACT acceptable (200-250 HemoTec) with: adequate oral antiplatelets + GP IIb/IIIa, high bleeding risk",
+      "UFH dosing: initial bolus 70-100 units/kg IV; check ACT at 5 min; additional 2,000-5,000 units as needed for target",
+      "Bivalirudin: 0.75 mg/kg bolus + 1.75 mg/kg/hr infusion; single ACT check; target >225 sec",
+      "ACT monitoring frequency: 5 min after bolus, then every 30 min, additional checks after boluses, after agent changes",
+      "Troubleshoot low ACT: verify heparin dose, check for resistance (rare), consider additional bolus, recheck in 5 min",
+      "Troubleshoot high ACT >400 sec: consider holding heparin, increased bleeding risk, monitor access site closely",
+      "Recognize ACT limitations: precision varies with temp, platelet count, hemodilution; use as clinical guide not absolute value"
+    ]
+  },
+  {
     id: "rt-1",
     role: "rt",
     title: "RT Imaging, Radiation & Room Safety",
@@ -112,9 +247,9 @@ const medicationQuickGuideRows = [
     medication: "Adenosine",
     mix: "Rapid IV push",
     start: "6 mg rapid IV push",
-    titration: "Second dose 12 mg in 1–2 min if needed",
-    max: "Per ACLS algorithm context",
-    notes: "For regular narrow-complex SVT; rapid flush after dose"
+    titration: "If no response in 1–2 min, give 12 mg (one time only)",
+    max: "12 mg total",
+    notes: "SVT termination; brief asystole expected (warn patient); rapid flush essential. Use central line if available"
   },
   {
     medication: "Amiodarone",
@@ -138,7 +273,7 @@ const medicationQuickGuideRows = [
     start: "5–20 mcg/min",
     titration: "Increase 5–20 mcg/min every 3–5 min",
     max: "400 mcg/min (ICU guide)",
-    notes: "Typical therapeutic range is 10–100 mcg/min based on clinical response"
+    notes: "Typical therapeutic range is 10–100 mcg/min based on clinical response. CONTRAINDICATION: Recent PDE-5 inhibitor use (sildenafil within 24 hr, tadalafil within 48 hr)"
   },
   {
     medication: "Dobutamine (Dobutrex)",
@@ -170,7 +305,7 @@ const medicationQuickGuideRows = [
     start: "0.02–0.2 mcg/kg/min",
     titration: "Increase 0.02 mcg/kg/min q5 min; decrease q15 min",
     max: "3 mcg/kg/min",
-    notes: "Use unit concentration table for mcg/min ↔ mL/hr"
+    notes: "FIRST-LINE vasopressor; central line preferred; target MAP >65 mmHg. Monitor for arrhythmias and tissue necrosis if extravasation"
   },
   {
     medication: "Phenylephrine (Neo-Synephrine)",
@@ -243,6 +378,46 @@ const medicationQuickGuideRows = [
     titration: "Repeat every 2–3 min to response",
     max: "Per scenario/protocol",
     notes: "Titrate to adequate ventilation; avoid abrupt full opioid reversal when possible"
+  },
+  {
+    medication: "Protamine Sulfate",
+    mix: "50 mg/5 mL vial",
+    start: "1 mg per 100 units heparin (max 50 mg per dose)",
+    titration: "Slow IV push over 10 minutes",
+    max: "50 mg per dose",
+    notes: "Reversal for heparin; risk of hypotension, bradycardia, anaphylaxis (fish allergy, prior vasectomy, NPH insulin use)"
+  },
+  {
+    medication: "Midazolam (Versed)",
+    mix: "IV",
+    start: "0.5–2 mg IV increments",
+    titration: "Repeat every 2–3 min to desired sedation",
+    max: "5 mg total",
+    notes: "Onset 1–3 min; reversal with flumazenil 0.2 mg IV"
+  },
+  {
+    medication: "Fentanyl",
+    mix: "50 mcg/mL vial",
+    start: "25–100 mcg IV increments",
+    titration: "Repeat every 5 min as needed",
+    max: "Per protocol/context",
+    notes: "Onset 1–2 min; reversal with naloxone 0.04–0.4 mg IV; monitor respiratory depression"
+  },
+  {
+    medication: "Metoprolol",
+    mix: "1 mg/mL IV",
+    start: "2.5–5 mg IV",
+    titration: "Repeat every 5 minutes as needed",
+    max: "15 mg total",
+    notes: "For tachycardia/hypertension; hold if HR <60, SBP <100, or heart failure signs"
+  },
+  {
+    medication: "Milrinone (Primacor)",
+    mix: "500 mcg/mL vial",
+    start: "Loading: 50 mcg/kg over 10 min (optional); Infusion: 0.375–0.75 mcg/kg/min",
+    titration: "Increase 0.125–0.375 mcg/kg/min q5–15 min",
+    max: "1.13 mcg/kg/min",
+    notes: "Phosphodiesterase-3 inhibitor; reduce 50% if CrCl 50 mL/min; risk of hypotension and arrhythmias"
   },
   {
     medication: "Oxygen",
