@@ -305,6 +305,67 @@ const roleLabelMap = {
   rt: "RT"
 };
 
+const sectionFigureMap = {
+  "rn-advanced-ffr": [
+    {
+      src: "CardPics/1-s2.0-S0735109716334301-gr4.jpg",
+      title: "FFR recording with intravenous adenosine",
+      note: "Pressure-wire tracing during induced hyperemia"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879818310331-gr1.jpg",
+      title: "iFR pullback concept",
+      note: "Wave-free resting index without adenosine"
+    },
+    {
+      src: "CardPics/jrv220002f2.jpg",
+      title: "Coronary artery anatomy and ACS mechanisms",
+      note: "Background anatomy and lesion pathophysiology"
+    }
+  ],
+  "rn-advanced-lhc": [
+    {
+      src: "CardPics/1-s2.0-S1936879816319082-gr12.jpg",
+      title: "Evolving transseptal catheterization techniques",
+      note: "Central illustration for structural-heart transseptal workflows"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879814009236-gr9.jpg",
+      title: "Two-chamber vs three-chamber fluoroscopic views",
+      note: "Projection differences for annular and leaflet visualization"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879821021749-gr1.jpg",
+      title: "Transseptal projection geometry",
+      note: "RAO/LAO and cranial/caudal orientation planning"
+    }
+  ],
+  "rn-advanced-rhc": [
+    {
+      src: "CardPics/NEJMvcm1212416_f3.jpg",
+      title: "Right-heart pressure waveforms and normal ranges",
+      note: "RA, RV, PA, and PCWP reference pressure profiles"
+    },
+    {
+      src: "CardPics/1-s2.0-S2213177923001968-gr2.jpg",
+      title: "Pulmonary artery catheter goals and technical points",
+      note: "Selection context, leveling, and hemodynamic targets"
+    }
+  ],
+  "rn-advanced-radial": [
+    {
+      src: "CardPics/1-s2.0-S1936879821003575-gr2.jpg",
+      title: "Radial access anatomy",
+      note: "Surface landmarks and adjacent structures for radial puncture"
+    },
+    {
+      src: "CardPics/1-s2.0-S1936879818309245-gr1.jpg",
+      title: "Palmar and dorsal arterial arch anatomy",
+      note: "Distal hand circulation relevant to radial access safety"
+    }
+  ]
+};
+
 const signoffFieldMetadata = [
   { key: "learnerName", label: "Learner Name", type: "text", requiredForSignoff: true },
   { key: "learnerInitials", label: "Learner Initials", type: "text", requiredForSignoff: true },
@@ -915,6 +976,48 @@ function createSectionCard(section) {
   const quickGuide = createMedicationQuickGuide(section.id);
   if (quickGuide) {
     body.appendChild(quickGuide);
+  }
+
+  const sectionFigures = Array.isArray(sectionFigureMap[section.id]) ? sectionFigureMap[section.id] : [];
+  if (sectionFigures.length > 0) {
+    const figureWrap = document.createElement("section");
+    figureWrap.className = "attachment-wrap";
+
+    const figureHeading = document.createElement("h4");
+    figureHeading.className = "attachment-heading";
+    figureHeading.textContent = "Procedure figures";
+
+    const figureGrid = document.createElement("div");
+    figureGrid.className = "attachment-grid";
+
+    sectionFigures.forEach((figure) => {
+      const figureCard = document.createElement("article");
+      figureCard.className = "attachment-card";
+
+      const img = document.createElement("img");
+      img.className = "attachment-preview";
+      img.src = figure.src;
+      img.alt = figure.title;
+      img.loading = "lazy";
+
+      const title = document.createElement("h5");
+      title.className = "attachment-title";
+      title.textContent = figure.title;
+
+      const file = document.createElement("p");
+      file.className = "attachment-file muted";
+      file.textContent = figure.src;
+
+      const note = document.createElement("p");
+      note.className = "attachment-note muted";
+      note.textContent = figure.note;
+
+      figureCard.append(img, title, file, note);
+      figureGrid.appendChild(figureCard);
+    });
+
+    figureWrap.append(figureHeading, figureGrid);
+    body.appendChild(figureWrap);
   }
 
   if (isReferenceOnly) {
