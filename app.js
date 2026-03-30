@@ -146,7 +146,7 @@ const medicationQuickGuideRows = [
     start: "2.5–10 mcg/kg/min",
     titration: "Up/down by 2.5 mcg/kg/min every 15 min",
     max: "20 mcg/kg/min",
-    notes: "Photo + ICU guide aligned"
+    notes: "Beta-1 inotrope; monitor for tachyarrhythmias and hypotension"
   },
   {
     medication: "Dopamine",
@@ -178,7 +178,7 @@ const medicationQuickGuideRows = [
     start: "0.5 mcg/kg/min",
     titration: "Increase 0.5 mcg/kg/min q5 min; decrease 0.1 mcg/kg/min q15 min",
     max: "5 mcg/kg/min",
-    notes: "Photo includes fixed-dose rapid/maintenance ranges"
+    notes: "Pure alpha-1 vasopressor; monitor for reflex bradycardia and ischemia"
   },
   {
     medication: "Nicardipine (Cardene)",
@@ -186,7 +186,7 @@ const medicationQuickGuideRows = [
     start: "2.5–5 mg/hr",
     titration: "Increase 2.5 mg/hr every 5–15 min; decrease 1 mg/hr q10 min",
     max: "15 mg/hr",
-    notes: "Photo start value shows 5 mg/hr"
+    notes: "Dihydropyridine calcium channel blocker; avoid abrupt blood pressure drops"
   },
   {
     medication: "Nitroprusside (Nipride)",
@@ -210,7 +210,7 @@ const medicationQuickGuideRows = [
     start: "1 mg/min",
     titration: "Increase 0.5 mg/min q10 min; decrease 0.25 mg/min q30 min",
     max: "4 mg/min",
-    notes: "Photo bolus 50–100 mg"
+    notes: "Monitor for neurologic toxicity and QRS widening at higher exposure"
   },
   {
     medication: "Magnesium sulfate",
@@ -234,7 +234,7 @@ const medicationQuickGuideRows = [
     start: "0.2 mg IV over 15 sec",
     titration: "Repeat 0.2 mg every 1 min to target response",
     max: "1 mg total (sedation reversal)",
-    notes: "Web reconciled with OCR"
+    notes: "May precipitate seizures in benzodiazepine-dependent or mixed-overdose patients"
   },
   {
     medication: "Naloxone (Narcan)",
@@ -242,7 +242,7 @@ const medicationQuickGuideRows = [
     start: "0.1–0.2 mg IV for sedation reversal OR 0.4–2 mg for overdose",
     titration: "Repeat every 2–3 min to response",
     max: "Per scenario/protocol",
-    notes: "Web reconciled with OCR"
+    notes: "Titrate to adequate ventilation; avoid abrupt full opioid reversal when possible"
   },
   {
     medication: "Oxygen",
