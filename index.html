@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="print.css" media="print" />
   </head>
   <body>
-    <header class="topbar">
-      <div>
-        <h1>Cath Lab Orientation Binder</h1>
-        <p class="subtitle">Interactive RN + RT onboarding with printable output</p>
+    <header class="site-header">
+      <div class="utility-bar" aria-label="Quick Links">
+        <nav class="utility-links">
+          <a href="#" aria-disabled="true">Find a Doctor</a>
+          <a href="#" aria-disabled="true">Find a Location</a>
+          <a href="#" aria-disabled="true">Patient Resources</a>
+          <a href="#" aria-disabled="true">Contact</a>
+        </nav>
       </div>
-      <button id="printBtn" class="btn btn-primary" type="button">Print Current View</button>
+
+      <div class="topbar">
+        <div class="brand-wrap">
+          <p class="brand-kicker">Where Health Leads</p>
+          <h1>Cath Lab Orientation Binder</h1>
+          <p class="subtitle">Interactive RN + RT onboarding with printable output</p>
+        </div>
+        <button id="printBtn" class="btn btn-primary" type="button">Print Current View</button>
+      </div>
     </header>
 
     <main class="layout">
@@ -22,8 +34,6 @@
 
         <label for="roleFilter">Track</label>
         <select id="roleFilter">
-          <option value="all">All (Shared + RN + RT)</option>
-          <option value="shared">Shared Core Only</option>
           <option value="rn">RN Track</option>
           <option value="rt">RT Track</option>
         </select>
@@ -40,8 +50,6 @@
           <h3>Print Packet by Track</h3>
           <label for="printTrack">Packet Scope</label>
           <select id="printTrack">
-            <option value="all">All (Shared + RN + RT)</option>
-            <option value="shared">Shared Core Only</option>
             <option value="rn">RN Track</option>
             <option value="rt">RT Track</option>
           </select>

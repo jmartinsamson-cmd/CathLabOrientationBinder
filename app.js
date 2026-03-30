@@ -1,4 +1,5 @@
 /* eslint-env browser */
+/* global document, localStorage, setTimeout */
 
 const STORAGE_KEY = "cathLabOrientationBinderState_v1";
 
@@ -94,10 +95,11 @@ const sections = [
     title: "RN Medication Reference Library",
     items: [
       "Review ED ICU Drug Guide content relevant to cath/EP medication workflows",
-      "Review photo references and organize quick-access medication visuals",
+      "Review extracted medication dataset and validate entries against unit policy",
       "Validate high-alert medication handling workflow with preceptor",
       "Validate vasoactive infusion setup and titration guardrails",
-      "Document medication pearls and unit-specific guidance in notes"
+      "Document medication pearls and unit-specific guidance in notes",
+      "Use RN Medication Quick Guide section as the bedside reference output"
     ]
   },
   {
@@ -173,33 +175,6 @@ const signoffFieldMetadata = [
 const trainingLinkOverrides = Array.isArray(globalThis.TRAINING_LINK_OVERRIDES)
   ? globalThis.TRAINING_LINK_OVERRIDES
   : [];
-
-const sectionAttachments = {
-  "rn-med-library": [
-    {
-      type: "document",
-      title: "ED ICU Drug Guide 2022",
-      file: "ED ICU Drug Guide 2022 9.19.2022 final.pdf"
-    },
-    { type: "image", title: "Medication Photo 1700", file: "IMG_1700.HEIC" },
-    { type: "image", title: "Medication Photo 2490", file: "IMG_2490.HEIC" },
-    { type: "image", title: "Medication Photo 2491", file: "IMG_2491.HEIC" },
-    { type: "image", title: "Medication Photo 2492", file: "IMG_2492.HEIC" },
-    { type: "image", title: "Medication Photo 2493", file: "IMG_2493.HEIC" },
-    { type: "image", title: "Medication Photo 2494", file: "IMG_2494.HEIC" },
-    { type: "image", title: "Medication Photo 2495", file: "IMG_2495.HEIC" },
-    { type: "image", title: "Medication Photo 2496", file: "IMG_2496.HEIC" },
-    { type: "image", title: "Medication Photo 2497", file: "IMG_2497.HEIC" },
-    { type: "image", title: "Medication Photo 2498", file: "IMG_2498.HEIC" },
-    { type: "image", title: "Medication Photo 2499", file: "IMG_2499.HEIC" },
-    { type: "image", title: "Medication Photo 2500", file: "IMG_2500.HEIC" },
-    { type: "image", title: "Medication Photo 2501", file: "IMG_2501.HEIC" },
-    { type: "image", title: "Medication Photo 2502", file: "IMG_2502.HEIC" },
-    { type: "image", title: "Medication Photo 2503", file: "IMG_2503.HEIC" },
-    { type: "image", title: "Medication Photo 2504", file: "IMG_2504.HEIC" },
-    { type: "image", title: "Medication Photo 5189", file: "IMG_5189.HEIC" }
-  ]
-};
 
 const medicationQuickGuideRows = [
   {
@@ -348,69 +323,6 @@ const medicationQuickGuideRows = [
   }
 ];
 
-function toAssetHref(fileName) {
-  return encodeURI(fileName);
-}
-
-function isInlinePreviewable(fileName) {
-  return /\.(png|jpe?g|gif|webp|svg)$/i.test(fileName);
-}
-
-function createAttachmentGallery(sectionId) {
-  const attachments = sectionAttachments[sectionId] || [];
-  if (attachments.length === 0) return null;
-
-  const wrap = document.createElement("section");
-  wrap.className = "attachment-wrap";
-
-  const heading = document.createElement("h4");
-  heading.className = "attachment-heading";
-  heading.textContent = "Medication Resources";
-
-  const gallery = document.createElement("div");
-  gallery.className = "attachment-grid";
-
-  attachments.forEach((attachment) => {
-    const card = document.createElement("article");
-    card.className = "attachment-card";
-
-    const title = document.createElement("h5");
-    title.className = "attachment-title";
-    title.textContent = attachment.title;
-
-    const fileName = document.createElement("p");
-    fileName.className = "attachment-file muted";
-    fileName.textContent = attachment.file;
-
-    if (attachment.type === "image" && isInlinePreviewable(attachment.file)) {
-      const preview = document.createElement("img");
-      preview.className = "attachment-preview";
-      preview.src = toAssetHref(attachment.file);
-      preview.alt = attachment.title;
-      preview.loading = "lazy";
-      card.appendChild(preview);
-    } else if (attachment.type === "image") {
-      const previewNote = document.createElement("p");
-      previewNote.className = "attachment-note muted";
-      previewNote.textContent = "Image preview may not be supported in all browsers (HEIC).";
-      card.appendChild(previewNote);
-    }
-
-    const link = document.createElement("a");
-    link.className = "training-link";
-    link.href = toAssetHref(attachment.file);
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = attachment.type === "document" ? "Open Drug Guide" : "Open Image";
-
-    card.append(title, fileName, link);
-    gallery.appendChild(card);
-  });
-
-  wrap.append(heading, gallery);
-  return wrap;
-}
-
 function toSearchUrl(term) {
   return `https://duckduckgo.com/?q=${encodeURIComponent(term)}`;
 }
@@ -475,8 +387,6 @@ const state = {
 };
 
 let printRestoreContext = null;
-let printGuideMode = "table";
-
 const elements = {
   container: document.getElementById("sectionsContainer"),
   emptyState: document.getElementById("emptyState"),
@@ -516,8 +426,6 @@ function saveState() {
 }
 
 function roleMatchesFilter(filterRole, sectionRole) {
-  if (filterRole === "all") return true;
-  if (filterRole === "shared") return sectionRole === "shared";
   return filterRole === sectionRole;
 }
 
@@ -526,6 +434,8 @@ function getVisibleSections() {
   const query = elements.searchInput.value.trim().toLowerCase();
 
   return sections.filter((section) => {
+    if (section.role !== "rn" && section.role !== "rt") return false;
+
     const roleMatch = roleMatchesFilter(role, section.role);
 
     if (!roleMatch) return false;
@@ -608,7 +518,6 @@ function printForTrack(track) {
 }
 
 function printRnQuickGuide() {
-  printGuideMode = "table";
   globalThis.document.body.classList.remove("print-laminated");
 
   printRestoreContext = {
@@ -626,7 +535,6 @@ function printRnQuickGuide() {
 }
 
 function printRnLaminatedQuickGuide() {
-  printGuideMode = "laminated";
   globalThis.document.body.classList.add("print-laminated");
 
   printRestoreContext = {
@@ -922,11 +830,6 @@ function createSectionCard(section) {
 
   setSignoffFieldValidationState(section.id, getMissingRequiredSignoffFields(section.id));
 
-  const attachmentGallery = createAttachmentGallery(section.id);
-  if (attachmentGallery) {
-    body.appendChild(attachmentGallery);
-  }
-
   body.append(checklist, notesLabel, notes, signoffWrap);
 
   header.append(titleWrap, tag, toggleBtn);
@@ -1011,7 +914,6 @@ function attachEvents() {
     elements.searchInput.value = printRestoreContext.search;
     state.collapsed = printRestoreContext.collapsed;
     printRestoreContext = null;
-    printGuideMode = "table";
     globalThis.document.body.classList.remove("print-laminated");
     render();
     saveState();
