@@ -1,12 +1,3 @@
-// Guard to disable admin UI and API calls on GitHub Pages (fail silently)
-(function () {
-  if (typeof window === 'undefined') return;
-  if (window.location && window.location.hostname && window.location.hostname.endsWith('github.io')) {
-    // Do nothing on GitHub Pages. Admin requires a backend.
-    return;
-  }
-})();
-
 /* Admin Panel for Cath Lab Orientation Binder */
 
 let adminToken = null;
@@ -88,7 +79,7 @@ function createAdminModal() {
     </div>
   `;
   
-document.body.appendChild(modal);
+  document.body.appendChild(modal);
   attachAdminEventListeners();
 }
 
@@ -257,6 +248,14 @@ function displayMedications(medications) {
 
 function addMedicationRow() {
   const list = document.getElementById('medicationsList');
+  const newMed = {
+    medication: 'New Medication',
+    mix: '',
+    start: '',
+    titration: '',
+    max: '',
+    notes: ''
+  };
   
   list.insertAdjacentHTML('beforeend', `
     <div class="medication-editor" data-index="new">
@@ -332,7 +331,7 @@ async function saveMedications() {
 
     if (!response.ok) throw new Error('Save failed');
 
-    await response.json();
+    const result = await response.json();
     statusEl.textContent = '✓ Medications saved and committed to git!';
     setTimeout(() => statusEl.setAttribute('hidden', ''), 3000);
   } catch (error) {
@@ -390,6 +389,7 @@ function loadSectionItems() {
 
 function addSectionItem() {
   const list = document.getElementById('sectionItemsList');
+  const count = list.querySelectorAll('.section-item-editor').length;
   
   const itemDiv = document.createElement('div');
   itemDiv.className = 'section-item-editor';
@@ -444,7 +444,7 @@ async function saveSectionChanges() {
 
     if (!response.ok) throw new Error('Save failed');
 
-    await response.json();
+    const result = await response.json();
     statusEl.textContent = '✓ Section saved and committed to git!';
     setTimeout(() => statusEl.setAttribute('hidden', ''), 3000);
   } catch (error) {
@@ -456,7 +456,6 @@ function switchAdminTab(tabName) {
   document.querySelectorAll('.admin-tab-btn').forEach(btn => btn.classList.remove('active'));
   document.querySelectorAll('.admin-tab-content').forEach(content => content.classList.add('hidden'));
   
-  // Note: use the globally scoped event (existing behavior) if present
   event.target.classList.add('active');
   document.getElementById(tabName + 'Tab').classList.remove('hidden');
 }

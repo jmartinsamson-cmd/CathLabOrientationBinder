@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cath Lab Orientation Binder</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="topbar">
-            <div class="brand-wrap">
-                <p class="brand-kicker">Orientation Resource</p>
-                <h1>Cath Lab Orientation Binder</h1>
-                <p class="subtitle">Track competencies, sign-offs, and training resources</p>
-            </div>
+      <div class="topbar">
+        <div class="brand-wrap">
+          <p class="brand-kicker">Where Health Leads</p>
+          <h1>Cath Lab Orientation Binder</h1>
+          <p class="subtitle">Interactive RN + RT onboarding with printable output</p>
         </div>
+        <div class="topbar-actions">
+          <button id="printBtn" class="btn btn-primary" type="button">Print Current View</button>
+          <button id="adminBtn" class="btn btn-admin" type="button">⚙️ Admin</button>
+        </div>
+      </div>
     </header>
 
-    <div class="layout">
-        <aside class="panel">
-            <div class="controls">
-                <h2>Filter &amp; Search</h2>
+    <main class="layout">
+      <aside class="panel controls" aria-label="Binder Controls">
+        <h2>Controls</h2>
 
-                <div>
-                    <label for="roleFilter">Role Track</label>
-                    <select id="roleFilter">
-                        <option value="">All Tracks</option>
-                        <option value="rn">RN</option>
-                        <option value="rt">RT</option>
-                    </select>
-                </div>
+        <label for="roleFilter">Track</label>
+        <select id="roleFilter">
+          <option value="rn">RN Track</option>
+          <option value="rt">RT Track</option>
+        </select>
 
-                <div>
-                    <label for="searchInput">Search</label>
-                    <input id="searchInput" type="search" placeholder="Search sections or items…" />
-                </div>
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search topics, competencies, equipment..." />
 
-                <div class="button-row">
-                    <button id="expandAllBtn" class="btn" type="button">Expand All</button>
-                    <button id="collapseAllBtn" class="btn" type="button">Collapse All</button>
-                </div>
+        <div class="button-row">
+          <button id="expandAllBtn" class="btn" type="button">Expand All</button>
+          <button id="collapseAllBtn" class="btn" type="button">Collapse All</button>
+        </div>
 
-                <div class="progress-card">
-                    <strong>Progress</strong>
-                    <p class="muted"><span id="completedCount">0</span> / <span id="totalCount">0</span> items &mdash; <span id="progressPercent">0%</span></p>
-                    <progress id="progressBar" class="progress-track" max="100" value="0" aria-label="Completion progress"></progress>
-                </div>
+        <section class="panel pdf-panel">
+          <h3>Print Packet by Track</h3>
+          <label for="printTrack">Packet Scope</label>
+          <select id="printTrack">
+            <option value="rn">RN Track</option>
+            <option value="rt">RT Track</option>
+          </select>
+          <button id="printTrackBtn" class="btn btn-primary" type="button">Print Selected Packet</button>
+          <button id="printQuickGuideBtn" class="btn" type="button">Print RN Quick Guide</button>
+          <button id="printLaminatedBtn" class="btn" type="button">Print Laminated RN Card</button>
+        </section>
 
-                <hr />
+        <button id="resetBtn" class="btn btn-danger" type="button">Reset Saved Progress</button>
 
-                <h2>Print</h2>
+        <section class="progress-card" aria-live="polite">
+          <h3>Progress</h3>
+          <p><strong id="completedCount">0</strong> / <span id="totalCount">0</span> complete</p>
+          <progress id="progressBar" class="progress-track" value="0" max="100" aria-label="Completion progress"></progress>
+          <p id="progressPercent" class="muted">0%</p>
+        </section>
 
-                <div>
-                    <label for="printTrack">Print Track</label>
-                    <select id="printTrack">
-                        <option value="">All Tracks</option>
-                        <option value="rn">RN</option>
-                        <option value="rt">RT</option>
-                    </select>
-                </div>
+        <section class="panel pdf-panel">
+          <h3>Source Template PDF</h3>
+          <p class="muted">Use this as your reference standard for competencies and requirements.</p>
+          <a href="Cath%20Lab%20%26%20EP%20Lab%20-%20Addendum%20to%20Procedural%20Core%20OAE%20Final%209.27.2023.pdf" target="_blank" rel="noopener noreferrer">
+            Open Template PDF
+          </a>
+        </section>
+      </aside>
 
-                <button id="printTrackBtn" class="btn btn-primary" type="button">Print Selected Track</button>
-                <button id="printBtn" class="btn" type="button">Print Current View</button>
-                <button id="printQuickGuideBtn" class="btn" type="button">Print RN Quick Guide</button>
-                <button id="printLaminatedBtn" class="btn" type="button">Print Laminated Cards</button>
+      <section class="panel binder" aria-label="Orientation Binder Content">
+        <div id="emptyState" class="empty-state" hidden>
+          No sections match your current filter. Try changing track or search.
+        </div>
+        <div id="sectionsContainer"></div>
+      </section>
+    </main>
 
-                <hr />
+    <footer class="footer muted">
+      <small>
+        Notes and checklist progress save automatically in your browser for this device.
+      </small>
+    </footer>
 
-                <button id="resetBtn" class="btn btn-danger" type="button">Reset All Progress</button>
-            </div>
-        </aside>
-
-        <main class="binder">
-            <div id="sectionsContainer"></div>
-            <p id="emptyState" class="muted" role="status" aria-live="polite" hidden>No sections match your current filter or search.</p>
-        </main>
-    </div>
-
-    <script src="training-links.js"></script>
-    <script src="app.js"></script>
-    <script src="admin.js"></script>
-</body>
+    <script src="training-links.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="admin.js" defer></script>
+  </body>
 </html>
