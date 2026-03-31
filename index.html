@@ -7,78 +7,11 @@
     <title>Cath Lab Orientation Binder</title>
 </head>
 <body>
-    <header class="site-header">
-        <div class="topbar">
-            <div class="brand-wrap">
-                <p class="brand-kicker">Orientation Resource</p>
-                <h1>Cath Lab Orientation Binder</h1>
-                <p class="subtitle">Track competencies, sign-offs, and training resources</p>
-            </div>
-        </div>
+    <header>
+        <nav class="topbar-actions">
+            <!-- Remove admin button -->
+        </nav>
     </header>
-
-    <div class="layout">
-        <aside class="panel">
-            <div class="controls">
-                <h2>Filter &amp; Search</h2>
-
-                <div>
-                    <label for="roleFilter">Role Track</label>
-                    <select id="roleFilter">
-                        <option value="">All Tracks</option>
-                        <option value="rn">RN</option>
-                        <option value="rt">RT</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="searchInput">Search</label>
-                    <input id="searchInput" type="search" placeholder="Search sections or items…" />
-                </div>
-
-                <div class="button-row">
-                    <button id="expandAllBtn" class="btn" type="button">Expand All</button>
-                    <button id="collapseAllBtn" class="btn" type="button">Collapse All</button>
-                </div>
-
-                <div class="progress-card">
-                    <strong>Progress</strong>
-                    <p class="muted"><span id="completedCount">0</span> / <span id="totalCount">0</span> items &mdash; <span id="progressPercent">0%</span></p>
-                    <progress id="progressBar" class="progress-track" max="100" value="0" aria-label="Completion progress"></progress>
-                </div>
-
-                <hr />
-
-                <h2>Print</h2>
-
-                <div>
-                    <label for="printTrack">Print Track</label>
-                    <select id="printTrack">
-                        <option value="">All Tracks</option>
-                        <option value="rn">RN</option>
-                        <option value="rt">RT</option>
-                    </select>
-                </div>
-
-                <button id="printTrackBtn" class="btn btn-primary" type="button">Print Selected Track</button>
-                <button id="printBtn" class="btn" type="button">Print Current View</button>
-                <button id="printQuickGuideBtn" class="btn" type="button">Print RN Quick Guide</button>
-                <button id="printLaminatedBtn" class="btn" type="button">Print Laminated Cards</button>
-
-                <hr />
-
-                <button id="resetBtn" class="btn btn-danger" type="button">Reset All Progress</button>
-            </div>
-        </aside>
-
-        <main class="binder">
-            <div id="sectionsContainer"></div>
-            <p id="emptyState" class="muted" role="status" aria-live="polite" hidden>No sections match your current filter or search.</p>
-        </main>
-    </div>
-
-    <script src="training-links.js"></script>
-    <script src="app.js"></script>
     <script src="admin.js"></script>
 </body>
 </html>
