@@ -329,134 +329,134 @@ const sectionFigureMap = {
     {
       src: "CardPics/IMG_5189.HEIC",
       title: "Pre-Procedure Intake & Readiness Form (IMG_5189)",
-      note: "Unit workflow document for demographics, risk factors, labs, medication reconciliation, contrast metrics, and device planning"
+      note: "Source: Internal unit form (IMG_5189.HEIC)."
     },
     {
       src: "CardPics/NEJMra011883_f1.jpg",
       title: "Figure: Coronary Artery Anatomy and ACS Phenotypes",
-      note: "Educational anatomy figure used for pre-case orientation and lesion mechanism review"
+      note: "Source: NEJM review figure (filename reference: NEJMra011883_f1); full citation pending verification."
     },
     {
       src: "CardPics/jrv250028f1.jpg",
       title: "Figure: Superficial Venous Thrombosis Sites and Pathophysiology",
-      note: "Access-complication awareness visual for upper/lower extremity thrombosis patterns"
+      note: "Source: Journal review figure (filename reference: jrv250028f1); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S0735109722048768-gr3.jpg",
       title: "Figure: Central Venous Access Landmark Anatomy",
-      note: "Neck/chest vascular relationships relevant to line placement and complication avoidance"
+      note: "Source: Elsevier figure (PII: S0735109722048768, Figure 3); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S1936879813008029-gr1.jpg",
       title: "Figure: Peripheral Arterial Anatomy Reference",
-      note: "Lower-extremity arterial orientation for femoral access planning and complication recognition"
+      note: "Source: Elsevier figure (PII: S1936879813008029, Figure 1); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S193687981830712X-gr1.jpg",
       title: "Figure: Supplemental Cath Procedure Orientation View",
-      note: "Supplemental fluoroscopic anatomy/positioning reference for pre-procedure briefing"
+      note: "Source: Elsevier figure (PII: S193687981830712X, Figure 1); full citation pending verification."
     }
   ],
   "rn-advanced-ffr": [
     {
       src: "CardPics/1-s2.0-S0735109716334301-gr4.jpg",
       title: "Figure 4. FFR Recording With Intravenous Adenosine",
-      note: "Source context: Standardization of Fractional Flow Reserve Measurements (J Am Coll Cardiol, 2016)"
+      note: "Source: Standardization of Fractional Flow Reserve Measurements. J Am Coll Cardiol. 2016; Figure 4."
     },
     {
       src: "CardPics/1-s2.0-S1936879818310331-gr1.jpg",
       title: "Figure 1. iFR Pullback Performed Pre-PCI",
-      note: "Source context: iFR GRADIENT Registry primary results (JACC: Cardiovascular Interventions, 2018)"
+      note: "Source: iFR GRADIENT Registry primary results. JACC Cardiovasc Interv. 2018; Figure 1."
     },
     {
       src: "CardPics/jrv220002f2.jpg",
       title: "Figure: Coronary Artery Anatomy and ACS Mechanisms",
-      note: "Background anatomy and lesion pathophysiology used for physiology-guided PCI decision support"
+      note: "Source: Journal review figure (filename reference: jrv220002f2); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S0735109708010358-gr2.jpg",
       title: "Figure: Supplemental Pressure-Wire Tracing (FFR)",
-      note: "Additional pressure-ratio waveform example for hyperemic interpretation"
+      note: "Source: Elsevier figure (PII: S0735109708010358, Figure 2); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S1936879816320866-gr1.jpg",
       title: "Figure: Physiology-Guided Lesion Assessment",
-      note: "Supplemental visual support for pressure-wire based lesion significance mapping"
+      note: "Source: Elsevier figure (PII: S1936879816320866, Figure 1); full citation pending verification."
     }
   ],
   "rn-advanced-lhc": [
     {
       src: "CardPics/1-s2.0-S1936879816319082-gr12.jpg",
       title: "Figure 12. Central Illustration: Evolving Indications and Contemporary Techniques of Transseptal Catheterization",
-      note: "Source context: Transseptal Techniques for Emerging Structural Heart Interventions (JACC: Cardiovascular Interventions, 2016)"
+      note: "Source: Transseptal Techniques for Emerging Structural Heart Interventions. JACC Cardiovasc Interv. 2016; Figure 12."
     },
     {
       src: "CardPics/1-s2.0-S1936879814009236-gr9.jpg",
       title: "Figure: Two-Chamber vs Three-Chamber Fluoroscopic Views",
-      note: "Projection differences affecting annular sizing and leaflet-segment visualization"
+      note: "Source: Elsevier figure (PII: S1936879814009236, Figure 9); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S1936879821021749-gr1.jpg",
       title: "Figure: Transseptal Projection Geometry (RAO/LAO, CRA/CAU)",
-      note: "Orientation planning diagram for puncture site targeting and safe septal traversal"
+      note: "Source: Elsevier figure (PII: S1936879821021749, Figure 1); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S0735109722070267-gr3.jpg",
       title: "Figure: Transseptal Puncture Fluoroscopic Sequence",
-      note: "Stepwise fluoroscopic views during transseptal needle/sheath positioning"
+      note: "Source: Elsevier figure (PII: S0735109722070267, Figure 3); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S0735109722075581-gr1.jpg",
       title: "Figure: Transseptal Crossing Example",
-      note: "Representative catheter trajectory during left-atrial crossing"
+      note: "Source: Elsevier figure (PII: S0735109722075581, Figure 1); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S1936879814009236-gr1.jpg",
       title: "Figure: Standard Viewing Angles for Left-Sided Structural Interventions",
-      note: "Projection orientation reference for transcatheter left-heart procedures"
+      note: "Source: Elsevier figure (PII: S1936879814009236, Figure 1); full citation pending verification."
     }
   ],
   "rn-advanced-rhc": [
     {
       src: "CardPics/NEJMvcm1212416_f3.jpg",
       title: "Figure: Right-Heart Pressure Waveforms and Normal Ranges",
-      note: "Reference profiles for RA, RV, PA, and PCWP hemodynamic interpretation"
+      note: "Source: NEJM video/clinical medicine figure (filename reference: NEJMvcm1212416_f3); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S2213177923001968-gr2.jpg",
       title: "Figure: Pulmonary Artery Catheter Goals and Technical Aspects",
-      note: "Patient selection, transducer leveling/zeroing, and hemodynamic targets"
+      note: "Source: Elsevier figure (PII: S2213177923001968, Figure 2); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S1936878X22003989-gr8.jpg",
       title: "Figure: Supplemental Right-Heart Hemodynamic Visual",
-      note: "Additional reference for catheter position recognition and waveform interpretation"
+      note: "Source: Elsevier figure (PII: S1936878X22003989, Figure 8); full citation pending verification."
     }
   ],
   "rn-advanced-radial": [
     {
       src: "CardPics/1-s2.0-S1936879821003575-gr2.jpg",
       title: "Figure: Radial Access Anatomy and Surface Landmarks",
-      note: "Anatomic relationships for radial puncture and neurovascular protection"
+      note: "Source: Elsevier figure (PII: S1936879821003575, Figure 2); full citation pending verification."
     },
     {
       src: "CardPics/1-s2.0-S1936879818309245-gr1.jpg",
       title: "Figure: Palmar and Dorsal Arterial Arch Anatomy",
-      note: "Distal hand collateral circulation relevant to radial access safety assessment"
+      note: "Source: Elsevier figure (PII: S1936879818309245, Figure 1); full citation pending verification."
     }
   ],
   "rn-advanced-ivus": [
     {
       src: "CardPics/1-s2.0-S1936879813018116-gr1.jpg",
       title: "Figure: Supplemental Intravascular Imaging Reference",
-      note: "Additional vessel anatomy/imaging context for IVUS interpretation workflows"
+      note: "Source: Elsevier figure (PII: S1936879813018116, Figure 1); full citation pending verification."
     }
   ],
   "rn-advanced-orbital": [
     {
       src: "CardPics/1-s2.0-S1936879821007925-gr4.jpg",
       title: "Figure: Supplemental Orbital Atherectomy Technique Visual",
-      note: "Additional procedural imaging context for crown passes and lesion modification"
+      note: "Source: Elsevier figure (PII: S1936879821007925, Figure 4); full citation pending verification."
     }
   ]
 };
